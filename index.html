@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>DOCTOR - Responsive HTML &amp; Bootstrap Template</title>
+	<title>Rise Resort Residences</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -115,7 +115,7 @@
 	<section class="about text-center" id="about">
 		<div class="container">
 			<div class="row">
-				<h2>about us</h2>
+				<h2>For Booking Call Now: <br> +91- 9311349262</h2>
 				<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</h4>
 				<div class="col-md-4 col-sm-6">
 					<div class="single-about-detail clearfix">
@@ -318,14 +318,37 @@
 					</div>
 					<div class="col-md-6 col-md-offset-1 contact-form">
 						<h3>Send Enquiry!</h3>
+						
+						<form id="myform" method="post">
+						<!--<label>from_name</label>-->
+						<input class="name" type="text" name="from_name" placeholder="Name"/>
+						<!--<label>reply_to</label>-->
+						<input class="email" type="text" name="reply_to" placeholder="Email"/>
+						<!--<label>to_name</label>-->
+						<input type="text" name="to_name" placeholder="Mobile"/>
+						<!--<label>message_html</label>-->
+						<input class="message" type="text" name="message_html" cols="30" rows="10" placeholder="I am Interested in Rise Resort Residences"/>
+						<br><br>
+						<button class="submit-btn">
+						Send
+						</button>
+						</form>
 
-						<form class="form" method="post" action="mailto:hbhardwaj185@gmail.com?subject=New Mail From Rie Resort &message= Hello Buudy">>
+						<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+						<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+						<script type="text/javascript">
+							(function(){
+							emailjs.init("user_x7woIjm3QmkwBjFiUxkc3");
+							})();
+						</script>
+						<!--<form class="form">
 							<input class="name" type="text" placeholder="Name">
 							<input class="email" type="email" placeholder="Email">
 							<input class="phone" type="text" placeholder="Phone No:">
 							<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
 							<input class="submit-btn" type="submit" value="SEND">
-						</form>
+						</form>-->
 					</div>
 				</div>
 			</div>
@@ -350,6 +373,7 @@
 
 	<!-- script tags
 	============================================================= -->
+	<script src="js/sendmail.js"></script>
 	<script src="js/jquery-2.1.1.js"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script src="js/gmaps.js"></script>
