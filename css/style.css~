@@ -118,7 +118,7 @@ li a.active {
 }
 .carousel-caption p {
     font-size: 70px;
-    color: #42b3e5;
+    color: #383838;
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 5%;
