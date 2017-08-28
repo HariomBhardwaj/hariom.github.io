@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 	<title>Rise Resort Residences</title>
+	<!--<link href="css/elements.css" rel="stylesheet">-->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -48,10 +49,47 @@
 					      
 					      <ul class="nav navbar-nav navbar-right">
 					        <li><a class="menu active" href="#home" >Home</a></li>
-					        <li><a class="menu" href="#about">about us</a></li>
+					        <!--<li><a class="menu" href="#about">about us</a></li>-->
 					        <li><a class="menu" href="#service">our services </a></li>
 					        <li><a class="menu" href="#team">Floor Plan</a></li>
 					        <li><a class="menu" href="#contact"> contact us</a></li>
+						<li>
+						<!-- Body Starts Here -->
+						<body id="body" style="overflow:hidden;">
+						<div id="abc">
+						<!-- Popup Div Starts Here -->
+						<div id="popupContact">
+						<!-- Contact Us Form -->
+						<form id="myform" method="post" name="form">
+						<img id="close" src="img/4.png" onclick ="div_hide()">
+						<h2>Send Enquiry!</h2>
+						<hr>
+						<!--<label>from_name</label>-->
+						<input class="name" type="text" name="from_name" placeholder="Name"/>
+						<!--<label>reply_to</label>-->
+						<input class="email" type="text" name="reply_to" placeholder="Email"/>
+						<!--<label>to_name</label>-->
+						<input type="text" name="to_name" placeholder="Mobile"/>
+						<br><br>
+						<button class="submit-btn">
+						Send
+						</button>
+						</form>
+
+						<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+						<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+						<script type="text/javascript">
+							(function(){
+							emailjs.init("user_x7woIjm3QmkwBjFiUxkc3");
+							})();
+						</script>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+<!-- Display Popup Button -->
+<button id="popup" onclick="div_show()"><span>Enquiry Now</span></button>
+</body></button></li>
 					      </ul>
 					    </div><!-- /navbar-collapse -->
 					  </div><!-- / .container-fluid -->
@@ -72,19 +110,19 @@
 			            	<img src="img/slide-one.jpg" alt="">
 			                <div class="carousel-caption">
 		               			<!--<h1></h1>-->
-		               			<p>Rise Resort Residences <br>+91-9311349262</p>
+		               			<p></p>
 			                </div>
 			            </div>
 			            <div class="item">
 			            	<img src="img/slide-three.jpg" alt="">
 			                <div class="carousel-caption">
-		               			<p>Rise Resort Residences <br>+91-9311349262</p>
+		               			<p></p>
 			                </div>
 			            </div>
 			            <div class="item">
 			            	<img src="img/slide-four.jpg" alt="">
 			                <div class="carousel-caption">
-		               			<p>Rise Resort Residences <br>+91-9311349262</p>
+		               			<p></p>
 			                </div>
 			            </div>
 			        </div>
@@ -102,13 +140,14 @@
 		</div>
 	</section><!-- end of slider section -->
 
+
 	<!-- about section -->
 	<section class="about text-center" id="about">
 		<div class="container">
 			<div class="row">
-				<h2>For Booking Call Now: <br> +91- 9311349262</h2>
-				<h4>Rise Resort Residences is a township spread over a sprawling 100 acres located just 0 kms away from NOIDA featuring uber luxury villas for a complete living experience.<br>
-To ensure a pollution free environment for the residents all vehicular movement in the township has been replaced with an underground personal parking system under the villas, with 2-4 parking spots each. For on-ground movement, customized golf carts are being made available. The project has been designed with great care to replicate an ecosystem with mountains, woods, rolling plains and even a stream. In-house services like those of chefs, butler, gardeners and spa and massage therapists have been made available on call. Sports facilities for swimming, lawn tennis, archery, cricket, paint ball, etc. have been provided. For the avid golfers, there is also a well - maintained 9 hole golf course. </h4>
+				<!--<h2>For Booking Call Now: <br> +91- 9311349262</h2>-->
+				<h3>Rise Resort Residences is a township spread over a sprawling 100 acres located just 0 kms away from NOIDA featuring uber luxury villas for a complete living experience.<br>
+To ensure a pollution free environment for the residents all vehicular movement in the township has been replaced with an underground personal parking system under the villas, with 2-4 parking spots each. For on-ground movement, customized golf carts are being made available. The project has been designed with great care to replicate an ecosystem with mountains, woods, rolling plains and even a stream. In-house services like those of chefs, butler, gardeners and spa and massage therapists have been made available on call. Sports facilities for swimming, lawn tennis, archery, cricket, paint ball, etc. have been provided. For the avid golfers, there is also a well - maintained 9 hole golf course. </h3>
 				<div class="col-md-4 col-sm-6">
 					<div class="single-about-detail clearfix">
 						<div class="about-img">
@@ -365,6 +404,7 @@ To ensure a pollution free environment for the residents all vehicular movement 
 
 	<!-- script tags
 	============================================================= -->
+	<script src="js/enquirypopup.js"></script>	
 	<script src="js/sendmail.js"></script>
 	<script src="js/jquery-2.1.1.js"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
