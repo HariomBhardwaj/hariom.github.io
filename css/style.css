@@ -110,20 +110,32 @@ position:fixed;
 background-color:#313131;
 overflow:auto
 }
+button#close {
+position:absolute;
+right:0px;
+bottom:10px;
+cursor:pointer
+}
 img#close {
 position:absolute;
 right:-14px;
 top:-14px;
 cursor:pointer
 }
-div#popupContact {
+
+.popupContact {
 position:absolute;
 left:50%;
 top:17%;
 margin-left:-202px;
 font-family:'Raleway',sans-serif
 }
-form {
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+.myform {
 max-width:350px;
 min-width:250px;
 padding:10px 50px;
@@ -209,13 +221,21 @@ font-family:JosefinSlab-SemiBold;
 font-size:100%;
 cursor:pointer
 }
+
 /*slider area*/
-/*.slider {
-margin-right:35%;
+/*.slidercontact {
+	width:100%;
+}*//*
+.slider {
+padding-right:35%;
+}
+.contactslide {
+	top:0;
+	right: 0;
 }*/
 .slider-row {
     margin: 0;
-    padding: 0;
+    padding-right: 0;
 }
 .slider-wrapper {
     margin: 0;
@@ -256,6 +276,7 @@ margin-right:35%;
     width: 5%;
 }
 .carousel-inner {
+	
     background: -webkit-linear-gradient(left, #000, blue);
     /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(left, #000, blue);

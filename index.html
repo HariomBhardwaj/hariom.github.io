@@ -58,22 +58,21 @@
 						<body id="body" style="overflow:hidden;">
 						<div id="abc">
 						<!-- Popup Div Starts Here -->
-						<div id="popupContact">
+						<div class="popupContact">
 						<!-- Contact Us Form -->
-						<form id="myform" method="post" name="form">
+						<form class="myform" id="myform" method="post" name="form">
 						<img id="close" src="img/4.png" onclick ="div_hide()">
 						<h2>Send Enquiry!</h2>
 						<hr>
 						<!--<label>from_name</label>-->
-						<input class="name" type="text" name="from_name" placeholder="Name"/>
+						<input class="name" type="text" name="from_name" placeholder="Name"/><br><br>
 						<!--<label>reply_to</label>-->
-						<input class="email" type="text" name="reply_to" placeholder="Email"/>
+						<input class="email" type="text" name="reply_to" placeholder="Email"/><br><br>
 						<!--<label>to_name</label>-->
 						<input type="text" name="to_name" placeholder="Mobile"/>
 						<br><br>
-						<button class="submit-btn">
-						Send
-						</button>
+						<button class="submit-btn">Send</button>
+						<button id="close" onclick="div_hide()">Close</button>
 						</form>
 
 						<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -84,12 +83,12 @@
 							emailjs.init("user_x7woIjm3QmkwBjFiUxkc3");
 							})();
 						</script>
-</div>
-<!-- Popup Div Ends Here -->
-</div>
-<!-- Display Popup Button -->
-<button id="popup" onclick="div_show()"><span>Enquiry Now</span></button>
-</body></button></li>
+						</div>
+						<!-- Popup Div Ends Here -->
+						</div>
+						<!-- Display Popup Button -->
+						<button id="popup" onclick="div_show()"><span>Enquiry Now</span></button>
+						</body></button></li>
 					      </ul>
 					    </div><!-- /navbar-collapse -->
 					  </div><!-- / .container-fluid -->
@@ -98,6 +97,7 @@
 			</div>
 		</div>
 	</header> <!-- end of header area -->
+<div class="slidercontact">
 
 	<section class="slider" id="home">
 		<div class="container-fluid">
@@ -126,6 +126,7 @@
 			                </div>
 			            </div>
 			        </div>
+					
 			        <!-- Controls -->
 			        <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
 			            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -135,11 +136,14 @@
 			            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			            <span class="sr-only">Next</span>
 			        </a>
+					
 			    </div>
 			</div>
 		</div>
+		
 	</section><!-- end of slider section -->
-
+			
+</div>
 
 	<!-- about section -->
 	<section class="about text-center" id="about">
