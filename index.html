@@ -63,7 +63,7 @@
 						<div class="popupContact">
 						<!-- Contact Us Form -->
 						<form class="myform" id="myform" method="post" name="form">
-						<img id="close" src="img/4.png" onclick ="div_hide()">
+						<img id="close1" class="close" src="img/4.png" onclick ="div_hide()">
 						<h2>Send Enquiry!</h2>
 						<hr>
 						<!--<label>from_name</label>-->
@@ -74,7 +74,9 @@
 						<input class="form-control" type="text" name="to_name" placeholder="Mobile"/>
 						<br><br>
 						<button class="submit-btn btn" style="background-color: blue;color:white">Send</button>
-						<button class="btn" style="background-color: gray;color:white" id="close" onclick="div_hide()">Close</button>
+				                <!--<button type="button" class="close" onclick="div_hide()">Close</button>-->
+						<!--<button class=" close submit-btn" onclick="div_hide()" style="background-color: gray;color:white; z-index:3" type="button" data-dismiss="modal">Close</button>-->
+                                                <a class="close btn" id="close" type="button" onclick="div_hide()">Close</a>
 						</form>
 
 						<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -153,9 +155,7 @@
 						<input class="form-control" type="text " style="margin-top:10px; margin-bottom:40px;" name="to_name" placeholder="Mobile">
 						<!--<label>message_html</label>-->
 						
-						<button class="submit-btn btn-info">
-						Send
-						</button>
+						<button class="submit-btn btn-info">Send</button>
 						</form>
 
 						<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

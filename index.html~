@@ -7,6 +7,8 @@
     <meta name="author" content="">
 	<title>Rise Resort Residences</title>
 	<!--<link href="css/elements.css" rel="stylesheet">-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -19,7 +21,7 @@
     <![endif]-->
 
 </head>
-<body>
+<body style="overflow:auto;">
 	
 	<!-- ====================================================
 	header section -->
@@ -58,22 +60,23 @@
 						<body id="body" style="overflow:hidden;">
 						<div id="abc">
 						<!-- Popup Div Starts Here -->
-						<div id="popupContact">
+						<div class="popupContact">
 						<!-- Contact Us Form -->
-						<form id="myform" method="post" name="form">
-						<img id="close" src="img/4.png" onclick ="div_hide()">
+						<form class="myform" id="myform" method="post" name="form">
+						<img id="close1" class="close" src="img/4.png" onclick ="div_hide()">
 						<h2>Send Enquiry!</h2>
 						<hr>
 						<!--<label>from_name</label>-->
-						<input class="name" type="text" name="from_name" placeholder="Name"/>
+						<input class="name form-control" type="text" name="from_name" placeholder="Name"/><br><br>
 						<!--<label>reply_to</label>-->
-						<input class="email" type="text" name="reply_to" placeholder="Email"/>
+						<input class="email form-control" type="text" name="reply_to" placeholder="Email"/><br><br>
 						<!--<label>to_name</label>-->
-						<input type="text" name="to_name" placeholder="Mobile"/>
+						<input class="form-control" type="text" name="to_name" placeholder="Mobile"/>
 						<br><br>
-						<button class="submit-btn">
-						Send
-						</button>
+						<button class="submit-btn btn" style="background-color: blue;color:white">Send</button>
+				                <!--<button type="button" class="close" onclick="div_hide()">Close</button>-->
+						<!--<button class=" close submit-btn" onclick="div_hide()" style="background-color: gray;color:white; z-index:3" type="button" data-dismiss="modal">Close</button>-->
+                                                <a class="close btn" id="close" type="button" onclick="div_hide()">Close</a>
 						</form>
 
 						<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -84,12 +87,12 @@
 							emailjs.init("user_x7woIjm3QmkwBjFiUxkc3");
 							})();
 						</script>
-</div>
-<!-- Popup Div Ends Here -->
-</div>
-<!-- Display Popup Button -->
-<button id="popup" onclick="div_show()"><span>Enquiry Now</span></button>
-</body></button></li>
+						</div>
+						<!-- Popup Div Ends Here -->
+						</div>
+						<!-- Display Popup Button -->
+						<button id="popup" onclick="div_show()"><span>Enquiry Now</span></button>
+						</body></button></li>
 					      </ul>
 					    </div><!-- /navbar-collapse -->
 					  </div><!-- / .container-fluid -->
@@ -99,12 +102,15 @@
 		</div>
 	</header> <!-- end of header area -->
 
-	<section class="slider" id="home">
+
+	<section class="slider " id="home">
 		<div class="container-fluid">
 			<div class="row">
+			   
 			    <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
 					<div class="header-backup"></div>
 			        <!-- Wrapper for slides -->
+				<div class="col-md-8">
 			        <div class="carousel-inner" role="listbox">
 			            <div class="item active">
 			            	<img src="img/slide-one.jpg" alt="">
@@ -125,8 +131,7 @@
 		               			<p></p>
 			                </div>
 			            </div>
-			        </div>
-			        <!-- Controls -->
+						<!-- Controls -->
 			        <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
 			            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			            <span class="sr-only">Previous</span>
@@ -135,11 +140,45 @@
 			            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			            <span class="sr-only">Next</span>
 			        </a>
+			        </div>
+					</div>
+			        <div class="col-md-4" >
+					  <div class="slidcontact" style="background-color:#3a9dca;" >
+						<h2 style="text-align:center; margin-top:10px">Send Enquiry Now!</h2>
+						
+						<form id="myform" method="post" style="padding:20px" >
+						<!--<label>from_name</label>-->
+						<input class="name form-control" style="margin-top:10px; margin-bottom:10px;" type="text" name="from_name" placeholder="Name">
+						<!--<label>reply_to</label>-->
+						<input class="email form-control" style="margin-top:10px; margin-bottom:10px;;" type="text" name="reply_to" placeholder="Email">
+						<!--<label>to_name</label>-->
+						<input class="form-control" type="text " style="margin-top:10px; margin-bottom:40px;" name="to_name" placeholder="Mobile">
+						<!--<label>message_html</label>-->
+						
+						<button class="submit-btn btn-info">Send</button>
+						</form>
+
+						<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+						<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+						<script type="text/javascript">
+							(function(){
+							emailjs.init("user_x7woIjm3QmkwBjFiUxkc3");
+							})();
+						</script>
+						</div>
+						<h2>For Booking Call Now:<span style="margin-left:20px">+91-9311349262</span></h2>
+					
+					</div>
+					
+			        	
 			    </div>
+			
 			</div>
 		</div>
+		
 	</section><!-- end of slider section -->
-
+			
 
 	<!-- about section -->
 	<section class="about text-center" id="about">
@@ -404,6 +443,8 @@ To ensure a pollution free environment for the residents all vehicular movement 
 
 	<!-- script tags
 	============================================================= -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
 	<script src="js/enquirypopup.js"></script>	
 	<script src="js/sendmail.js"></script>
 	<script src="js/jquery-2.1.1.js"></script>

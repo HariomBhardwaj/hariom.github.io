@@ -110,13 +110,20 @@ position:fixed;
 background-color:#313131;
 overflow:auto
 }
-button#close {
+a#close {
 position:absolute;
 right:50px;
 bottom:50px;
+min-height:40px;
+min-width:90px;
+text-align:center;
+vertical-align:center;
+horizontal-align:center;
+border-radius:5px;
+border:2px solid black;
 cursor:pointer
 }
-img#close {
+img#close1 {
 position:absolute;
 right:-14px;
 top:-14px;
@@ -328,6 +335,11 @@ cursor:pointer
     font-size: 90px;
     color: #42b3e5;
     margin-top: 50px;
+}
+.about h3 {
+    font-size: 15px;
+    margin: .5em .5em 0;
+    font-family: 'Open Sans', sans-serif;
 }
 .about h4 {
     font-family:JosefinSlab-SemiBold;
