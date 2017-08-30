@@ -99,6 +99,10 @@ li a.active {
     margin-top: 4px;
 }
 /*POPUP style start*/
+.form-group {
+	left:0;
+}
+
 #abc {
 width:100%;
 height:100%;
@@ -143,7 +147,7 @@ margin:10px -50px;
 border:0;
 border-top:1px solid #ccc
 }
-.myform {
+/*.myform {
 max-width:750px;
 min-width:650px;
 max-height:600px;
@@ -153,7 +157,7 @@ border:2px solid gray;
 border-radius:10px;
 font-family:raleway;
 background-color:#fff
-}
+}*/
 .name {
 	width:100%;
 	height:
