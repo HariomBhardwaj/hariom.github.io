@@ -56,55 +56,14 @@
 					        <li><a class="menu" href="#team">Floor Plan</a></li>
 					        <li><a class="menu" href="#contact"> contact us</a></li>
 						<li>
-						<!-- Body Starts Here -->
-						<!--<body class="body" id="body" style="overflow:hidden;">
-						<div id="abc">
-						<!-- Popup Div Starts Here -->
-						<!--<div class="popupContact">
-						<!-- Contact Us Form -->
-						<!--<form class="myform" id="myform" method="post" name="form">
-						<img id="close1" class="close" src="img/4.png" onclick ="div_hide()">
-						<h2>Send Enquiry!</h2>
-						<hr>
 						
-						<input class="name form-control" type="text" name="from_name" placeholder="Name"/><br><br>
-						
-						<input class="email form-control" type="text" name="reply_to" placeholder="Email"/><br><br>
-						
-						<input class="form-control" type="text" name="to_name" placeholder="Mobile"/>
-						<br><br>
-						<button class="submit-btn btn" onclick="div_hide()"  style="background-color: blue;color:white">Send</button>
-				                
-                                                <a class="close btn" id="close" type="button" onclick="div_hide()">Close</a>
-						</form>
-
-						<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-						<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-						<script type="text/javascript">
-							(function(){
-							emailjs.init("user_x7woIjm3QmkwBjFiUxkc3");
-							})();
-						</script>
-						</div>
-						<!-- Popup Div Ends Here -->
-						
-						<!--</div>
 						<!-- Display Popup Button -->
-					<a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Enquiry Now</a>
-						<!--<button id="popup" onclick="div_show()"><span>Enquiry Now</span></button>
-						<!--</body></button>-->
-							</li>
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Enquiry Now</button>
+						<!--<button id="popup" onclick="div_show()"><span>Enquiry Now</span></button>-->
+						</li>
 					      </ul>
 
-<!--/////////////////////////////////////////-->
-<!--<div class="container">
-  <div class="row">
-    
-    <h1 class="text-center"><a href="#myModal" role="button" class="btn btn-primary btn-lg" data-toggle="modal">Contact Us</a></h1>
-    
-  </div>
-</div>-->
+<!--////////////////////POPUP FORM/////////////////////-->
 
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -119,13 +78,12 @@
           <!--<div class="form-group"><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>-->
           <div class="form-group"><input class="form-control email" placeholder="Email Address" data-placement="top" data-trigger="manual" type="text"></div>
           <div class="form-group"><input class="form-control phone" placeholder="Mobile" data-placement="top" data-trigger="manual" type="text"></div>
-          <div class="form-group"><button type="submit" class="btn btn-success">Send</button></div>
+          <div class="form-group"><button type="submit" data-dismiss="modal" class="btn btn-success">Send</button></div>
         </form>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 						<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 						<script type="text/javascript">
-						
 							(function(){
 							emailjs.init("user_x7woIjm3QmkwBjFiUxkc3");
 							
