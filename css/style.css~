@@ -110,6 +110,7 @@ position:fixed;
 background-color:#313131;
 overflow:auto
 }
+
 a#close {
 position:absolute;
 right:50px;
