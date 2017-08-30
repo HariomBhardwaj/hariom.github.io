@@ -27,7 +27,7 @@
 	header section -->
 	<header class="top-header">
 		<div class="container">
-			<div class="row" style="background-color:#3a9dca;">
+			<div class="row">
 				<div class="col-xs-5 header-logo">
 					<br>
 					<a href="index.html"><img src="img/logo.png" alt="" class="img-responsive logo"></a>
@@ -73,9 +73,8 @@
 						<!--<label>to_name</label>-->
 						<input class="form-control" type="text" name="to_name" placeholder="Mobile"/>
 						<br><br>
-						<button class="submit-btn btn" style="background-color: blue;color:white">Send</button>
-				                <!--<button type="button" class="close" onclick="div_hide()">Close</button>-->
-						<!--<button class=" close submit-btn" onclick="div_hide()" style="background-color: gray;color:white; z-index:3" type="button" data-dismiss="modal">Close</button>-->
+						<button class="submit-btn btn" onclick="div_hide()"  style="background-color: blue;color:white">Send</button>
+				                
                                                 <a class="close btn" id="close" type="button" onclick="div_hide()">Close</a>
 						</form>
 
@@ -167,7 +166,7 @@
 							})();
 						</script>
 						</div>
-						<h2>For Booking Call Now:<br><span style="margin-left:20px">+91-9311349262</span></h2>
+						<h2 style="text-align:center;">For Booking Call Now:<br><span style="margin-left:20px">+91-9311349262</span></h2>
 					
 					</div>
 					
