@@ -11,8 +11,10 @@ alert("Form Submitted Successfully...");
 //Function To Display Popup
 function div_show() {
 document.getElementById('abc').style.display = "block";
+document.getElementById('myform').reset();
 }
 //Function to Hide Popup
 function div_hide(){
 document.getElementById('abc').style.display = "none";
+document.getElementById('myform').reset();
 }

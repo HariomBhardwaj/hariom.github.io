@@ -17,3 +17,6 @@ myform.submit(function(event){
     });
   return false;
 });
+function formreset() {
+    document.getElementById("myform").reset();
+}

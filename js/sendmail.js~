@@ -15,5 +15,9 @@ myform.submit(function(event){
        alert("Send query failed!\r\n Response:\n " + JSON.stringify(err));
        myform.find("button").text("Send");
     });
+document.getElementById("myform").reset();
   return false;
 });
+function formreset() {
+    document.getElementById("myform").reset();
+}
