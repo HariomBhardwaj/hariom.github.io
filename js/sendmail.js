@@ -4,7 +4,7 @@ myform.submit(function(event){
 
   // Change to your service ID, or keep using the default service
   var service_id = "default_service";
-  var template_id = "template_FLDVV1BB";
+  var template_id = "Temp_hariom185";
 
   myform.find("button").text("Sending...");
   emailjs.sendForm(service_id,template_id,"myform")
