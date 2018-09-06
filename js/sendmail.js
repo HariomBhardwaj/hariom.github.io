@@ -1,13 +1,13 @@
-var myform = $("form#myform");
+var myform = $("form#myform12");
 myform.submit(function(event){
 	event.preventDefault();
 
   // Change to your service ID, or keep using the default service
   var service_id = "default_service";
-  var template_id = "Temp_hariom185";
+  var template_id = "sonu_temp";
 
   myform.find("button").text("Sending...");
-  emailjs.sendForm(service_id,template_id,"myform")
+  emailjs.sendForm(service_id,template_id,myform[0])
   	.then(function(){ 
     	alert("Sent!");
        myform.find("button").text("Send");
